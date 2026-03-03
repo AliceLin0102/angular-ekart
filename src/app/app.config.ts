@@ -5,7 +5,7 @@ import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+        provideBrowserGlobalErrorListeners(), //瀏覽器層級的全域錯誤監聽
+        provideRouter(routes) //啟用 Angular 路由系統，並註冊routes。
   ]
 };
