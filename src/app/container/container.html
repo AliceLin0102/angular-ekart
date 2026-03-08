@@ -1,0 +1,26 @@
+<div class="ekart-product--container">
+    <!-- <img [src]="product.pImage" width="10%">
+    <p>Name : {{product.name}}</p>
+    <p>Price : {{'$'+product.price}}</p>
+    <p>Color : {{product.color}}</p>
+    <p>Discount Price : {{'$'+getDiscountedPrice().toFixed(2)}}</p>
+    <p>{{product.instock>0 ? 'Only '+product.instock+' items left': 'not in stock'}}</p> -->
+
+    <!-- <button [disabled]="!(product.instock>0)" >Buy Now</button> -->
+    <!-- disabled , hidden , checked 不能用String interpolation，只能用property binding-->
+    <!-- <input [value]="name" [attr.aria-hidden]="true" ><br>
+    <input (input)="onNameChange($event)"><br>
+    <p>name={{name}}</p> -->
+
+    <!-- <button (click)="decrementCartValue()">-</button>
+    <span>{{addToCart}}</span>
+    <button (click)="incrementCartValue()">+</button> -->
+    <app-search></app-search>
+    <!-- <div *ngFor="let item of [2,3,4,5,6,8]">
+        <p>Current element of array is:{{item}}</p>
+    </div>
+    <div *ngFor="let item of listOfString">
+        <p>Current element of array is:{{item}}</p>
+    </div> -->
+    <product-list></product-list>
+</div>

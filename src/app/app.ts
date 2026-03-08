@@ -4,11 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import { TopHeader } from './top-header/top-header';
 import { TopMenu } from './header/top-menu/top-menu';
 import { MainMenu } from './header/main-menu/main-menu';
-import { ProductListComponent } from './product-list/product-list';
+import { ContainerComponent } from './container/container';
+
 
 @Component({
   selector: 'app-root',
-    imports: [HeaderComponent, TopHeader, TopMenu, MainMenu, ProductListComponent], //RouterOutlet,
+    imports: [HeaderComponent, TopHeader, TopMenu, MainMenu, ContainerComponent], //RouterOutlet,
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
